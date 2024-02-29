@@ -17,7 +17,7 @@ namespace BCA_Practical
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StudentForm());
+            Application.Run(new DistrictForm());
         }
     }
 }

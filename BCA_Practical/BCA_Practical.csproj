@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer\DistrictLayer.cs" />
     <Compile Include="BusinessLayer\StudentLayer.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="DataLayer\DAO.cs" />
@@ -59,9 +60,16 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\ClassToTable.cs" />
+    <Compile Include="Model\DistrictInfo.cs" />
     <Compile Include="Model\Enum\Gender.cs" />
     <Compile Include="Model\KeyValue.cs" />
     <Compile Include="Model\StudentInfo.cs" />
+    <Compile Include="Pages\DistrictForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\DistrictForm.Designer.cs">
+      <DependentUpon>DistrictForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\StudentAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +88,9 @@
     <Compile Include="Shape.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\DistrictForm.resx">
+      <DependentUpon>DistrictForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\StudentAdd.resx">
       <DependentUpon>StudentAdd.cs</DependentUpon>
